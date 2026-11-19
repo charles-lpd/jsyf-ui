@@ -8,10 +8,10 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@hadabridge/docs",
-    "@hadabridge/playground",
-    "@hadabridge/vue",
-    "@hadabridge/native",
-    "@hadabridge/web-components"
+    "@charles-d/docs",
+    "@charles-d/playground",
+    "@charles-d/vue",
+    "@charles-d/native",
+    "@charles-d/web-components"
   ]
 }
