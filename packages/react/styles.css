@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "@hadabridge/tokens/styles.css";
+
+@source "./src";
+@source "./dist";
+
+@theme inline {
+  --color-background: var(--hb-color-background);
+  --color-foreground: var(--hb-color-foreground);
+  --color-primary: var(--hb-color-primary);
+  --color-primary-foreground: var(--hb-color-primary-foreground);
+  --color-secondary: var(--hb-color-secondary);
+  --color-secondary-foreground: var(--hb-color-secondary-foreground);
+  --color-muted: var(--hb-color-muted);
+  --color-muted-foreground: var(--hb-color-muted-foreground);
+  --color-border: var(--hb-color-border);
+  --color-destructive: var(--hb-color-destructive);
+  --radius-sm: var(--hb-radius-sm);
+  --radius-md: var(--hb-radius-md);
+  --radius-lg: var(--hb-radius-lg);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+}

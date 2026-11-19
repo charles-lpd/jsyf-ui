@@ -1,0 +1,7 @@
+{
+  "name": "@hadabridge/vue",
+  "version": "0.0.0",
+  "description": "Hadabridge UI 的 Vue 3 实现层占位包",
+  "private": true,
+  "type": "module"
+}

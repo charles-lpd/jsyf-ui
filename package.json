@@ -1,0 +1,31 @@
+{
+  "name": "hadabridge-ui-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.3",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10.34.3"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter=@hadabridge/tokens --filter=@hadabridge/core --filter=@hadabridge/react",
+    "check-types": "turbo run check-types",
+    "dev": "pnpm build:packages && turbo run dev --parallel",
+    "dev:docs": "pnpm build:packages && turbo run dev --filter=@hadabridge/docs",
+    "dev:playground": "pnpm build:packages && turbo run dev --filter=@hadabridge/playground",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "turbo run lint",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm lint && pnpm check-types && pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@hadabridge/typescript-config": "workspace:*",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.8",
+    "typescript": "5.9.2"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "@hadabridge/typescript-config/library.json",
+  "include": ["src/**/*.ts"]
+}

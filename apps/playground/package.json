@@ -1,0 +1,30 @@
+{
+  "name": "@hadabridge/playground",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "check-types": "tsc --noEmit",
+    "dev": "vite --port 3001",
+    "lint": "eslint . --max-warnings 0",
+    "preview": "vite preview --port 4001"
+  },
+  "dependencies": {
+    "@hadabridge/react": "workspace:*",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19"
+  },
+  "devDependencies": {
+    "@hadabridge/eslint-config": "workspace:*",
+    "@hadabridge/typescript-config": "workspace:*",
+    "@tailwindcss/vite": "^4.1.16",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}

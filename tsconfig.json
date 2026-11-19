@@ -1,0 +1,7 @@
+{
+  "extends": "@hadabridge/typescript-config/base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "files": []
+}

@@ -1,0 +1,21 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "tooling/*"
+
+onlyBuiltDependencies:
+  - esbuild
+
+catalog:
+  eslint: 9.39.0
+  prettier: 3.6.2
+  tailwindcss: 4.1.16
+  typescript: 5.9.2
+  vite: 6.4.1
+
+catalogs:
+  react19:
+    react: 19.1.0
+    react-dom: 19.1.0
+    "@types/react": ^19.0.0
+    "@types/react-dom": ^19.0.0
