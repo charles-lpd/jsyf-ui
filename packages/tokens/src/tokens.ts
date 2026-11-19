@@ -1,14 +1,26 @@
 export const colorTokens = {
   background: "#ffffff",
   foreground: "#171717",
+  card: "#ffffff",
+  cardForeground: "#171717",
+  popover: "#ffffff",
+  popoverForeground: "#171717",
   primary: "#18181b",
   primaryForeground: "#fafafa",
   secondary: "#f4f4f5",
   secondaryForeground: "#18181b",
+  accent: "#f4f4f5",
+  accentForeground: "#18181b",
   muted: "#f4f4f5",
   mutedForeground: "#71717a",
   border: "#e4e4e7",
+  input: "#d4d4d8",
+  ring: "#18181b",
   destructive: "#dc2626",
+  destructiveForeground: "#ffffff",
+  success: "#16a34a",
+  warning: "#d97706",
+  info: "#2563eb",
 } as const;
 
 export const radiusTokens = {
