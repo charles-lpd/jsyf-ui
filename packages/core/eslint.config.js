@@ -1,3 +1,3 @@
-import { baseConfig } from "@hadabridge/eslint-config/base";
+import { baseConfig } from "@charles-d/eslint-config/base";
 
 export default baseConfig;

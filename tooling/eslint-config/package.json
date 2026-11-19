@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/eslint-config",
+  "name": "@charles-d/eslint-config",
   "version": "0.0.0",
   "private": true,
   "type": "module",

@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/tokens",
+  "name": "@charles-d/tokens",
   "version": "0.1.0",
   "description": "跨框架、跨平台的 Hadabridge 设计令牌",
   "type": "module",
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.hadawallet.com/dev/hadabridge-ui-monorepo.git",
+    "url": "https://github.com/charles-lpd/jsyf-ui.git",
     "directory": "packages/tokens"
   },
   "license": "MIT",
   "devDependencies": {
-    "@hadabridge/eslint-config": "workspace:*",
-    "@hadabridge/typescript-config": "workspace:*",
+    "@charles-d/eslint-config": "workspace:*",
+    "@charles-d/typescript-config": "workspace:*",
     "eslint": "catalog:",
     "typescript": "catalog:"
   }

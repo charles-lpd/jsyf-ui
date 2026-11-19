@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/typescript-config",
+  "name": "@charles-d/typescript-config",
   "version": "0.0.0",
   "private": true,
   "files": ["*.json"],

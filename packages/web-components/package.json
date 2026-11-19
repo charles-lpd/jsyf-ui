@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/web-components",
+  "name": "@charles-d/web-components",
   "version": "0.0.0",
   "description": "Hadabridge UI 的 Web Components 实现层占位包",
   "private": true,

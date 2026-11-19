@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@hadabridge/tokens/styles.css";
+@import "@charles-d/tokens/styles.css";
 
 @source "./src";
 @source "./dist";

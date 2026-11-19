@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/native",
+  "name": "@charles-d/native",
   "version": "0.0.0",
   "description": "Hadabridge UI 的原生实现层占位包",
   "private": true,

@@ -1,4 +1,4 @@
 {
-  "extends": "@hadabridge/typescript-config/react-library.json",
+  "extends": "@charles-d/typescript-config/react-library.json",
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

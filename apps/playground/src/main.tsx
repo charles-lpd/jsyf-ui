@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Button } from "@hadabridge/react";
-import "@hadabridge/react/styles.css";
+import { Button } from "@charles-d/react";
+import "@charles-d/react/styles.css";
 
 function App() {
   return (

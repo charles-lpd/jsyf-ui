@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/playground",
+  "name": "@charles-d/playground",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,13 +11,13 @@
     "preview": "vite preview --port 4001"
   },
   "dependencies": {
-    "@hadabridge/react": "workspace:*",
+    "@charles-d/react": "workspace:*",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },
   "devDependencies": {
-    "@hadabridge/eslint-config": "workspace:*",
-    "@hadabridge/typescript-config": "workspace:*",
+    "@charles-d/eslint-config": "workspace:*",
+    "@charles-d/typescript-config": "workspace:*",
     "@tailwindcss/vite": "^4.1.16",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",

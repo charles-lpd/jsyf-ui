@@ -9,11 +9,11 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "build:packages": "turbo run build --filter=@hadabridge/tokens --filter=@hadabridge/core --filter=@hadabridge/react",
+    "build:packages": "turbo run build --filter=@charles-d/tokens --filter=@charles-d/core --filter=@charles-d/react",
     "check-types": "turbo run check-types",
     "dev": "pnpm build:packages && turbo run dev --parallel",
-    "dev:docs": "pnpm build:packages && turbo run dev --filter=@hadabridge/docs",
-    "dev:playground": "pnpm build:packages && turbo run dev --filter=@hadabridge/playground",
+    "dev:docs": "pnpm build:packages && turbo run dev --filter=@charles-d/docs",
+    "dev:playground": "pnpm build:packages && turbo run dev --filter=@charles-d/playground",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "turbo run lint",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",
-    "@hadabridge/typescript-config": "workspace:*",
+    "@charles-d/typescript-config": "workspace:*",
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
     "typescript": "5.9.2"

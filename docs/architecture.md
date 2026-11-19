@@ -53,15 +53,15 @@ hadabridge-ui-monorepo/
 ## 3. 包边界与依赖方向
 
 ```text
-@hadabridge/tokens ─┬─> @hadabridge/react ─> docs / playground
-                    ├─> @hadabridge/vue
-                    ├─> @hadabridge/native
-@hadabridge/core ───┴─> @hadabridge/web-components
+@charles-d/tokens ─┬─> @charles-d/react ─> docs / playground
+                    ├─> @charles-d/vue
+                    ├─> @charles-d/native
+@charles-d/core ───┴─> @charles-d/web-components
 ```
 
-- `@hadabridge/tokens`：平台令牌，提供 TypeScript 常量和 CSS Variables。
-- `@hadabridge/core`：不依赖框架、DOM 或 CSS 的类型、状态与纯函数。
-- `@hadabridge/react`：React Props、Radix 组合、CVA 变体、Lucide 图标和 `cn`。
+- `@charles-d/tokens`：平台令牌，提供 TypeScript 常量和 CSS Variables。
+- `@charles-d/core`：不依赖框架、DOM 或 CSS 的类型、状态与纯函数。
+- `@charles-d/react`：React Props、Radix 组合、CVA 变体、Lucide 图标和 `cn`。
 - `apps/*`：只负责文档与开发验证，不向组件包反向输出业务代码。
 - `tooling/*`：只服务仓库开发，不发布到 npm。
 
@@ -69,14 +69,14 @@ hadabridge-ui-monorepo/
 
 | 类型 | 包名 | 发布状态 |
 | --- | --- | --- |
-| 设计令牌 | `@hadabridge/tokens` | 公开 |
-| 框架无关契约 | `@hadabridge/core` | 公开 |
-| React | `@hadabridge/react` | 公开 |
-| Vue 3 | `@hadabridge/vue` | 暂时 private |
-| Native | `@hadabridge/native` | 暂时 private |
-| Web Components | `@hadabridge/web-components` | 暂时 private |
+| 设计令牌 | `@charles-d/tokens` | 公开 |
+| 框架无关契约 | `@charles-d/core` | 公开 |
+| React | `@charles-d/react` | 公开 |
+| Vue 3 | `@charles-d/vue` | 暂时 private |
+| Native | `@charles-d/native` | 暂时 private |
+| Web Components | `@charles-d/web-components` | 暂时 private |
 
-如果最终 Native 明确只支持 React Native，应在首次公开发布前将包名收敛为 `@hadabridge/react-native`，避免发布后再做破坏性更名。
+如果最终 Native 明确只支持 React Native，应在首次公开发布前将包名收敛为 `@charles-d/react-native`，避免发布后再做破坏性更名。
 
 ## 5. 发布包配置原则
 
@@ -85,7 +85,7 @@ hadabridge-ui-monorepo/
 - Radix UI、CVA、Lucide、`clsx`、`tailwind-merge` 是 React 实现细节，放在 `dependencies`。
 - ESM 包使用显式 `.js` 内部导入，保证 Node ESM 与现代构建器一致。
 - `sideEffects` 只保留 CSS，JavaScript 可被 tree-shaking。
-- 根入口提供统一导出，`@hadabridge/react/button` 提供按组件导入。
+- 根入口提供统一导出，`@charles-d/react/button` 提供按组件导入。
 
 ## 6. React 包内部结构
 
@@ -111,11 +111,11 @@ src/
 
 ### Native
 
-直接使用 `@hadabridge/tokens` 的 TypeScript 对象映射到 StyleSheet 或目标平台样式系统。不得依赖 CSS、DOM、Radix UI 或 Tailwind Web 插件。
+直接使用 `@charles-d/tokens` 的 TypeScript 对象映射到 StyleSheet 或目标平台样式系统。不得依赖 CSS、DOM、Radix UI 或 Tailwind Web 插件。
 
 ### Web Components
 
-使用 CSS Variables 作为主题协议，选择 Shadow DOM 或明确的 light DOM 策略。跨框架事件名、状态名和属性语义应沉淀在 `@hadabridge/core`。
+使用 CSS Variables 作为主题协议，选择 Shadow DOM 或明确的 light DOM 策略。跨框架事件名、状态名和属性语义应沉淀在 `@charles-d/core`。
 
 ## 8. 开发、构建与发布
 

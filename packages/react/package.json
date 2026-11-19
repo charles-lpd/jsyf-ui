@@ -1,5 +1,5 @@
 {
-  "name": "@hadabridge/react",
+  "name": "@charles-d/react",
   "version": "0.1.0",
   "description": "基于 React、Radix UI、CVA 与 Tailwind CSS 的组件库",
   "type": "module",
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.hadawallet.com/dev/hadabridge-ui-monorepo.git",
+    "url": "https://github.com/charles-lpd/jsyf-ui.git",
     "directory": "packages/react"
   },
   "license": "MIT",
   "dependencies": {
-    "@hadabridge/tokens": "workspace:^",
+    "@charles-d/tokens": "workspace:^",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
@@ -56,8 +56,8 @@
     "tailwindcss": ">=4.1.0 <5.0.0"
   },
   "devDependencies": {
-    "@hadabridge/eslint-config": "workspace:*",
-    "@hadabridge/typescript-config": "workspace:*",
+    "@charles-d/eslint-config": "workspace:*",
+    "@charles-d/typescript-config": "workspace:*",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
     "eslint": "catalog:",
